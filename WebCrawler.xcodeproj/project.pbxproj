@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2719C1911D0779A9001C09E5 /* base.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base.txt; sourceTree = "<group>"; };
 		27F967B81CE2AB9100D39ABC /* WebCrawler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WebCrawler; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F967BB1CE2AB9100D39ABC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2719C1901D077994001C09E5 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				2719C1911D0779A9001C09E5 /* base.txt */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		27F967AF1CE2AB9000D39ABC = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				27F967BB1CE2AB9100D39ABC /* main.swift */,
+				2719C1901D077994001C09E5 /* Files */,
 			);
 			path = WebCrawler;
 			sourceTree = "<group>";
@@ -239,6 +249,7 @@
 				27F967C11CE2AB9100D39ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
