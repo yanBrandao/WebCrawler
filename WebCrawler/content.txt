@@ -1,0 +1,40 @@
+/html>/html>/html>
+/html>
+/html>
+!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk
+Database Caching 94/107 queries in 0.027 seconds using disk
+
+ Served from: blog.dota2.com @ 2016-06-09 17:19:41 by W3 Total Cache -->/html>/html>
+
+
+/html>
+/html>
+/html>/html>
+/html>
+
+
+/html>/html>
+/html>
+/html>
+/html>
+!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk
+Database Caching 129/169 queries in 0.038 seconds using disk
+
+ Served from: blog.dota2.com @ 2016-06-09 17:22:16 by W3 Total Cache -->/html>
+
+/html>/html>
+!-- View Generation: 760ms - 48.50MB - 161 - 2016-06-09 17:44:22 PDT -->/html>/html>/html>
+/html>/script>/html>
+!-- View Generation: 760ms - 48.50MB - 161 - 2016-06-09 17:44:22 PDT -->/html>!-- super cache -->/html>
+/html>/html>
+!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+Database Caching 19/236 queries in 1.320 seconds using disk
+
+ Served from: gamehall.uol.com.br @ 2016-06-09 21:22:24 by W3 Total Cache -->

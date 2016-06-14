@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276C01B91D0A11EB00432B21 /* URLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C01B81D0A11EB00432B21 /* URLGenerator.swift */; };
+		276C01BB1D0A25BF00432B21 /* CrawlerIA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C01BA1D0A25BF00432B21 /* CrawlerIA.swift */; };
+		276C01BD1D0A336A00432B21 /* ContentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C01BC1D0A336A00432B21 /* ContentExtractor.swift */; };
 		27F967BC1CE2AB9100D39ABC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F967BB1CE2AB9100D39ABC /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		2719C1911D0779A9001C09E5 /* base.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = base.txt; sourceTree = "<group>"; };
+		276C01B81D0A11EB00432B21 /* URLGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLGenerator.swift; sourceTree = "<group>"; };
+		276C01BA1D0A25BF00432B21 /* CrawlerIA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrawlerIA.swift; sourceTree = "<group>"; };
+		276C01BC1D0A336A00432B21 /* ContentExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentExtractor.swift; sourceTree = "<group>"; };
 		27F967B81CE2AB9100D39ABC /* WebCrawler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WebCrawler; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F967BB1CE2AB9100D39ABC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				27F967BB1CE2AB9100D39ABC /* main.swift */,
+				276C01BC1D0A336A00432B21 /* ContentExtractor.swift */,
+				276C01BA1D0A25BF00432B21 /* CrawlerIA.swift */,
+				276C01B81D0A11EB00432B21 /* URLGenerator.swift */,
 				2719C1901D077994001C09E5 /* Files */,
 			);
 			path = WebCrawler;
@@ -129,7 +138,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276C01BD1D0A336A00432B21 /* ContentExtractor.swift in Sources */,
+				276C01BB1D0A25BF00432B21 /* CrawlerIA.swift in Sources */,
 				27F967BC1CE2AB9100D39ABC /* main.swift in Sources */,
+				276C01B91D0A11EB00432B21 /* URLGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
