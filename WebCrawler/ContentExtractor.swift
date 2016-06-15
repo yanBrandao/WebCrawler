@@ -20,20 +20,16 @@ class ContentExtractor {
         do{
             let url = NSURL(string: urlString)
             let myURLContent = try String(contentsOfURL: url!, encoding: NSUTF8StringEncoding)
+            var splittedContent = myURLContent.componentsSeparatedByString(" ")
             
-            let splitContent = myURLContent.componentsSeparatedByString("<")
-            if let outputStream = NSOutputStream(URL: fileDestinationUrl, append: true){
+            
+            //print(myURLContent)
+            /*if let outputStream = NSOutputStream(URL: fileDestinationUrl, append: true){
                 outputStream.open()
-                var data:NSData = NSData()
-            for i in 0..<splitContent.count{
-                //if splitContent[i].containsString("p>") {
-                        data = splitContent[i].dataUsingEncoding(NSUTF8StringEncoding)!
-                //}
-                
-            }
-            outputStream.write(UnsafePointer<UInt8>(data.bytes), maxLength: data.length)
-            outputStream.close()
-            }
+                let data:NSData = myURLContent.dataUsingEncoding(NSUTF8StringEncoding)!
+                outputStream.write(UnsafePointer<UInt8>(data.bytes), maxLength: data.length)
+                outputStream.close()
+            }*/
         }catch let error as NSError {
             print("error writing to url \(fileDestinationUrl)")
             print(error.localizedDescription)

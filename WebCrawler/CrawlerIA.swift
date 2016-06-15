@@ -20,7 +20,7 @@ class CralwerIA {
         
         let answer = NSString(data: inputData, encoding: NSUTF8StringEncoding)
         
-        if answer!.containsString("Yes") {
+        if (answer!.containsString("Yes") || answer!.localizedCaseInsensitiveContainsString("yEs")) {
             print("WebCrawler| So, write your query: ")
             let otherKeyboard = NSFileHandle.fileHandleWithStandardInput()
             let otherInputData = otherKeyboard.availableData

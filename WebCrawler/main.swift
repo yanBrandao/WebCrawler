@@ -33,7 +33,7 @@ let devDirectoryURL = try! NSFileManager.defaultManager().URLForDirectory(.Devel
 let fileDestinationUrl = devDirectoryURL.URLByAppendingPathComponent("/WebCrawler/WebCrawler/base.txt")
 
 var ret = ("", true)
-print("WebCrawler| Wellcome to your personal webcrawler. :D")
+/*print("WebCrawler| Wellcome to your personal webcrawler. :D")
 ret = crawlerIA.IALoop()
 while(ret.1){
     
@@ -77,7 +77,6 @@ while(ret.1){
                             //To don't get trash, we use this to get only URL strings.
                             if(oneMoreSplit[k].containsString("http")){
                                 fullpage.appendContentsOf(oneMoreSplit[k])
-                                //contentEx.extraction(oneMoreSplit[k], content: ret.0)
                                 fullpage.appendContentsOf("\n")
                             }
                         }
@@ -85,17 +84,12 @@ while(ret.1){
                 }
             }
             // writing to disk
-            //NSOutputStream(toFileAtPath: fileDestinationUrl.absoluteString, append: true){
             if let outputStream = NSOutputStream(URL: fileDestinationUrl, append: true){
                 outputStream.open()
                 let data:NSData = fullpage.dataUsingEncoding(NSUTF8StringEncoding)!
                 outputStream.write(UnsafePointer<UInt8>(data.bytes), maxLength: data.length)
                 outputStream.close()
             }
-            /*try fullpage.writeToURL(fileDestinationUrl, atomically: true, encoding: NSUTF8StringEncoding)
-             
-             // saving was successful. any code posterior code goes here
-             */
             // reading from disk
             
             
@@ -108,10 +102,23 @@ while(ret.1){
     do {
         let mytext = try String(contentsOfURL: fileDestinationUrl, encoding: NSUTF8StringEncoding)
         print(mytext)   // "some text\n"
+        var textSplit = mytext.componentsSeparatedByString("\n")
     } catch let error as NSError {
         print("error loading from url \(fileDestinationUrl)")
         print(error.localizedDescription)
     }
     print("WebCrawler| Your url database has been succesfully updated.")
     ret = crawlerIA.IALoop()
+}*/
+print("WebCrawler| Showing your url database.")
+do {
+    let mytext = try String(contentsOfURL: fileDestinationUrl, encoding: NSUTF8StringEncoding)
+    print(mytext)   // "some text\n"
+    var textSplit = mytext.componentsSeparatedByString("\n")
+    for i in 0..<textSplit.count{
+        contentEx.extraction(textSplit[i], content: "Tame Impala")
+    }
+} catch let error as NSError {
+    print("error loading from url \(fileDestinationUrl)")
+    print(error.localizedDescription)
 }
